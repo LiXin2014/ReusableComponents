@@ -1,3 +1,38 @@
+:root {
+    --nav-text: #9E9E9E;
+    --nav-selected-text: #090F31;
+    --header-text: #4F4F4F;
+    --blue-color: #3D5AFE;
+    --button-dark-text: #3F3F3F;
+    --button-light-text: #FFFFFF;
+    --button-label-text: #000000;
+    --button-light-label: #828282;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: purple;
+    color: #333333;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 500;
+    height: 100vh;
+}
+
+#app {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.navigations {
+    grid-column: 1 / 1;
+    width: 100%;
+    background: #FAFBFD;
 }

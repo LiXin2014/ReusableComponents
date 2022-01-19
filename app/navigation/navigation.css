@@ -1,0 +1,20 @@
+.navigations ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--nav-text);
+    margin-top: 200px;
+}
+
+.navigations ul li {
+    margin-left: 20%;
+}
+
+.navigations .selected {
+    color: var(--nav-selected-text);
+}
+
+ul {
+    list-style: none;
+}

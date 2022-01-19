@@ -1,10 +1,16 @@
 import React from "react";
 import ReactDom from "react-dom";
 import './index.css';
+import { Navigation } from "./navigation/navigation";
 
 class App extends React.Component {
     render() {
-        return <div>Hello World!</div>
+        return (
+            <React.Fragment>
+                <Navigation />
+                <div>Buttons</div>
+            </React.Fragment>
+        )
     }
 }
 
