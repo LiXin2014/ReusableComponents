@@ -103,7 +103,7 @@
     background: var(--blue-color);
 }
 
-.primary:hover, .primary:focus, .start-icon:hover, .start-icon:focus, .end-icon:hover, .end-icon:focus
+.primary:hover, .primary:focus, .start-icon:hover, .start-icon:focus, .end-icon:hover, .end-icon:focus,
 .sm:hover, .sm:focus, .md:hover, .md:focus, .lg:hover, .lg:focus, .disableShadow:hover, .disableShadow:focus {
     color: white;
     background: #0039CB;

@@ -15,6 +15,12 @@ class App extends React.Component {
                     <ButtonCard text="<Button />">
                         <Button />
                     </ButtonCard>
+                    <ButtonCard text={`<Button onClick="alert('Hello world!')" />}`}>
+                        <Button onClick={() => alert('Hello world!')} />
+                    </ButtonCard>
+                    <ButtonCard text={`<Button autoFocus />}`}>
+                        <Button autoFocus />
+                    </ButtonCard>
                    <ButtonCard text={`<Button variant="outline"/>`}>
                         <Button variant="outline" />
                     </ButtonCard>

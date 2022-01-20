@@ -12,7 +12,7 @@ Button.defaultProps = {
 };
 
 export function Button(props) {
-    const {variant, startIcon, endIcon, size, color, disableShadow, disabled} = props;
+    const {variant, startIcon, endIcon, size, color, disableShadow, disabled, ...rest} = props;
 
     const variantStyle = variant;
     const sizeStyle = size;
@@ -25,6 +25,7 @@ export function Button(props) {
     return (
         <button 
             className={`basic ${variantStyle} ${sizeStyle} ${colorStyle} ${iconStyle} ${disableShadowStyle} ${disabledStyle}`} 
+            {...rest}
             disabled={disabled}>
                 {startIcon && <span className="material-icons">
                     {startIcon}
@@ -36,3 +37,8 @@ export function Button(props) {
         </button>
     );
 }
+
+
+/*  NOTE：
+    1. How to get rest of properties when destructuring an object
+ */
