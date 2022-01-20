@@ -1,0 +1,130 @@
+.basic {
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: var(--button-dark-text);
+    
+    padding: 8px 16px;
+    width: fit-content;
+    cursor: pointer;
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+.basic:hover, .basic:focus {
+    background: #AEAEAE;
+}
+
+.buttonLabel {
+    font-size: 12px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: 10px;
+}
+
+.outline {
+    background: white;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+}
+
+.outline:hover, .outline:focus {
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.text {
+    color: var(--blue-color);
+    background: none;
+    box-shadow: none;
+}
+
+.text:hover, .text:focus {
+    color: var(--blue-color);
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.disableShadow {
+    color: white;
+    background: var(--blue-color);
+}
+
+.disabled {
+    cursor: not-allowed;
+    color: var(--nav-text);
+    background: #E0E0E0;
+}
+
+.disabled:hover, .disabled:focus {
+    background: #E0E0E0;
+}
+
+.text.disabled {
+    color: var(--nav-text);
+    background: none;
+}
+
+.start-icon, .end-icon {
+    color: white;
+    background: var(--blue-color);
+    display: flex;
+    align-items: center;
+}
+
+.start-icon .material-icons {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.end-icon .material-icons {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.sm {
+    color: white;
+    background: var(--blue-color);
+    padding: 6px 12px;
+}
+
+.md {
+    color: white;
+    background: var(--blue-color);
+    padding: 8px 16px;
+}
+
+.lg {
+    color: white;
+    background: var(--blue-color);
+    padding: 11px 22px;
+}
+
+.primary {
+    color: white;
+    background: var(--blue-color);
+}
+
+.primary:hover, .primary:focus, .start-icon:hover, .start-icon:focus, .end-icon:hover, .end-icon:focus
+.sm:hover, .sm:focus, .md:hover, .md:focus, .lg:hover, .lg:focus, .disableShadow:hover, .disableShadow:focus {
+    color: white;
+    background: #0039CB;
+}
+
+.secondary {
+    color: white;
+    background: #455A64;
+}
+
+.secondary:hover, .secondary:focus {
+    color: white;
+    background: #1C313A;
+}
+
+.danger {
+    color: white;
+    background: #D32F2F;
+}
+
+.danger:hover, .danger:focus {
+    color: white;
+    background: #9A0007;
+}

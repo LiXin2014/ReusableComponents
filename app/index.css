@@ -18,7 +18,7 @@
 body {
     color: #333333;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 500;
+    font-weight: 500;
     height: 100vh;
 }
 
@@ -35,4 +35,24 @@ body {
     grid-column: 1 / 1;
     width: 100%;
     background: #FAFBFD;
+}
+
+.buttons {
+    grid-column: 2 / span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    margin: 50px 80px;
+}
+
+.buttons .header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: var(--header-text);
+}
+
+.disabledSection, .iconSection, .sizeSection, .colorSection {
+    display: flex;
+    gap: 100px;
 }
