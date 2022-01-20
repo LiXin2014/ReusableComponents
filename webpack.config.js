@@ -13,7 +13,7 @@ module.exports = {
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
         ]
     },
-    mode: 'development',
+    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     devtool: "inline-source-map",
     plugins: [
         new HtmlWebpackPlugin({
