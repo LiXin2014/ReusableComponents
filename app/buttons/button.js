@@ -40,5 +40,5 @@ export function Button(props) {
 
 
 /*  NOTE：
-    1. How to get rest of properties when destructuring an object
+    1. How to get rest of properties when destructuring an object, at line 15.
  */
