@@ -48,13 +48,13 @@
     background: var(--blue-color);
 }
 
-.disabled {
+.buttons .disabled {
     cursor: not-allowed;
     color: var(--nav-text);
     background: #E0E0E0;
 }
 
-.disabled:hover, .disabled:focus {
+.buttons .disabled:hover, .disabled:focus {
     background: #E0E0E0;
 }
 
@@ -80,13 +80,13 @@
     margin-left: 5px;
 }
 
-.sm {
+.buttons .sm {
     color: white;
     background: var(--blue-color);
     padding: 6px 12px;
 }
 
-.md {
+.buttons .md {
     color: white;
     background: var(--blue-color);
     padding: 8px 16px;
@@ -104,7 +104,7 @@
 }
 
 .primary:hover, .primary:focus, .start-icon:hover, .start-icon:focus, .end-icon:hover, .end-icon:focus,
-.sm:hover, .sm:focus, .md:hover, .md:focus, .lg:hover, .lg:focus, .disableShadow:hover, .disableShadow:focus {
+.buttons .sm:hover, .buttons .sm:focus, .buttons .md:hover, .buttons .md:focus, .lg:hover, .lg:focus, .disableShadow:hover, .disableShadow:focus {
     color: white;
     background: #0039CB;
 }

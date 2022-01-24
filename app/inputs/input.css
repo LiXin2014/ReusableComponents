@@ -1,0 +1,123 @@
+.inputs {
+    grid-column: 2 / span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 80px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+
+.label {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+
+input, textarea {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 18px 108px 18px 12px;
+    border-radius: 8px;
+}
+
+.helperText {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10px;
+    color: var(#828282);
+}
+
+.default input, .default textarea {
+    border: 1px solid #828282;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: none;
+}
+
+.default input:hover, .default textarea:hover {
+    border: 1px solid #333333;
+}
+
+.default input:focus, .default textarea:focus {
+    border: 1px solid #2962FF;
+}
+
+.default input:focus + .label, .default textarea:focus + .label {
+    color: #2962FF;
+}
+
+.error .label {
+    color: #D32F2F;
+}
+
+.error input {
+    border: 1px solid #D32F2F;
+}
+
+.error .helperText {
+    color: #D32F2F;
+}
+
+.error input:hover {
+    border: 1px solid #333333;
+}
+
+.error input:focus {
+    border: 1px solid #D32F2F;
+}
+
+.error input:hover + .label {
+    color: #333333;
+}
+
+.error input:focus + .label {
+    color: #D32F2F;
+}
+
+.error.hovered .helperText {
+    color: #333333;
+}
+
+.inputs .disabled input {
+    border: 1px solid #E0E0E0;
+}
+
+.inputs .sm input {
+    padding: 10px 108px 10px 12px;
+}
+
+.inputs .fullWidth {
+    width: 100%;
+}
+
+span.start-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: var(--button-light-label);
+}
+
+span.end-input-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: var(--button-light-label);
+}
+
+.start-input-icon input {
+    padding-left: 40px;
+    padding-right: 78px;
+}
+
+/*NOTES:
+ 1. When it comes to CSS sibling selectors, you know there’s only two. 
+    The + sibling combinator selects the first match that comes immediately after, and the ~ subsequent-sibling combinator matches all the ones that come after.
+    How to select the one comes before, see https://medium.com/free-code-camp/how-to-make-the-impossible-possible-in-css-with-a-little-creativity-bd96bb42b29d
+*/
